@@ -1,23 +1,7 @@
-@echo off
+#!/bin/bash
+chmod 777 ./*.sh
+rm -f /usr/app/project/webapp_new.jar
+jar -cvf webapp_new.war ./*
 
-TITLE Create TMS War
-
-cls
-echo ==================================
-echo ==                              ==
-echo ==  TITLE Create TMS War ==
-echo ==                              ==
-echo ==================================
-
-echo -------------------------------
-
-@rem …Ë÷√Java–Èƒ‚ª˙¬∑æ∂
-
-
-echo JAVA_HOME = %JAVA_HOME%
-
-"%JAVA_HOME%\bin\jar" cvf  webapp.war *
-
-pause
-
-@echo on
+#echo "start success!"
+exit 0
